@@ -1,0 +1,44 @@
+            {
+                "version": "0.2.0",
+                "configurations": [      
+                
+                    {
+                        "type": "pwa-chrome",
+                        "request": "launch",
+                        "name": "Launch Chrome against localhost",
+                        "url": "http://localhost:8080",
+                        "webRoot": "${workspaceFolder}"
+                    },
+                    {
+                        "type": "node",
+                        "request": "attach",
+                        "name": "Debug node",
+                        "runtimeExecutable": "/usr/local/bin/node",
+                        "processId": "${command:PickProcess}",
+                        "restart": true,
+                        "protocol": "inspector",
+                        "skipFiles": [
+                            "/**"
+                        ],
+                    },   
+                    {
+                        "type": "node",
+                        "name": "vscode-jest-tests",
+                        "runtimeExecutable": "/usr/local/bin/node",
+                        "request": "launch",
+                        "args": [
+                            "--runInBand",
+                            "-i"
+                        ],
+                        "cwd": "${workspaceFolder}",
+                        "console": "internalConsole",
+                        "internalConsoleOptions": "openOnSessionStart",
+                        "disableOptimisticBPs": true,
+                        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+                    }
+                ]
+            }
+            
+            
+
+        

@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 10px solid #2a2a37;
+}
+
+.card-header {
+    background-color: #e0e0e0;
+    color: white;
+    padding: 5px 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-header span {
+    background-color: #2a2a37;
+    border-radius: 50%;
+    padding: 5px 12px;
+    font-size: 14px;
+    color: white;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.card-body {
+    padding: 0 15px 15px;
+}
+
+.card-body h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: black;
+    display: flex;
+}
+
+.card-body p {
+    margin: 5px 0;
+    color: gray;
+    font-size: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #2a2a37;
+    padding: 5px 15px;
+    margin: 15 px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    font -size: 30 px;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80px;
+    text-align: end;
+}
+
+.stat-item p {
+    margin: 10px 10;
+    font-size: 15px;
+    padding: 2px;
+}
+
+.types {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.type {
+    padding: 2px 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.type img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.type.fire {
+    background-color: #f08030;
+    color: white;
+}
+
+.type.grass {
+    background-color: #78c850;
+    color: white;
+}
+
+.type.water {
+    background-color: #6890f0;
+    color: white;
+}
